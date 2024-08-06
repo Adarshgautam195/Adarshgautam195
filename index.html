@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हेलो नमस्कार दोस्तों आप सभी को एक बहुत ही अच्छा मौका दिया जा रहा है जिसमे आपको ₹699 का रिचार्ज फ्री में दिया जा रहा है  </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>नमस्कार दोस्तों 🙏!</h1>
+        <p>आपको इस खुशी में रिचार्ज मिल रहा है 699 रुपए का क्योंकि 09//06/2024 को आदर्श का जन्मदिन है।</p>
+        <form id="phoneForm">
+            <input type="text" id="phoneNumber" placeholder="अपना नंबर डालें" required><br>
+            <button type="button" onclick="showOperatorSelection()">Next</button>
+        </form>
+        <div id="operatorSelection" style="display:none;">
+            <select id="operator">
+                <option value="">Choose your operator</option>
+                <option value="vodafone">Vodafone</option>
+                <option value="bsnl">BSNL</option>
+                <option value="jio">Jio</option>
+                <option value="airtel">Airtel</option>
+            </select><br>
+            <button type="button" onclick="showTargetLine()">Next</button>
+        </div>
+        <div id="targetLine" class="target-line" style="display:none;">
+            <p>Target Line: <span id="targetStatus">0%</span> completed</p>
+            <button onclick="shareOnWhatsApp()">WhatsApp पर शेयर करें</button>
+            <p id="congratulationsMessage" style="display:none;">Congratulations! आपको रिचार्ज मिल जायेगा। इसमें 30 मिनट का टाइम लग सकता है।</p>
+        </div>
+        <div class="comments">
+            <p>हाँ, 200000 लोगों को फ्री रिचार्ज दिया जा रहा है।</p>
+            <p> हैलो,अपने सभी रिश्तेदारों और घर वालों को शेयर कर दो ताकि वो भी इसका जल्दी से लाभ उठा सके !</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
